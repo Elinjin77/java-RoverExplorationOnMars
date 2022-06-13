@@ -20,7 +20,7 @@ public class FileService {
         /**
          * Reading informations from input file
          */
-        inputFile = new File("input.txt");
+        inputFile = new File("../input.txt");
         try (Scanner s = new Scanner(inputFile)){
             s.useDelimiter("\n");
             aux = s.next(); // Getting the first line:  the upper-right coordinates of the plateau
@@ -45,7 +45,7 @@ public class FileService {
         /**
          * Writting informations to output file
          */
-        outputFile = new File("output.txt");
+        outputFile = new File("../output.txt");
         try (BufferedWriter buffer = new BufferedWriter(new FileWriter(outputFile, false))){
             for( String oneItem : outputString ) {
                 buffer.append(oneItem + "\n");
