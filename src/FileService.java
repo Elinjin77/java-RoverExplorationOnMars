@@ -43,7 +43,7 @@ public class FileService {
         }
 
         /**
-         * Writting informations from output file
+         * Writting informations to output file
          */
         outputFile = new File("output.txt");
         try (BufferedWriter buffer = new BufferedWriter(new FileWriter(outputFile, false))){
